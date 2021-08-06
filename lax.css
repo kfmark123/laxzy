@@ -1,4 +1,8 @@
-@import url(https://envykrunk.github.io/removal/removal.css);
+/* main css by rei#0001 | updates by Envy#9335 | laxzy CSS */
+
+* {
+	color: var(--accent-color);
+}
 
 [style*="color:#eb5656"] {
 	color: var(--accent-color) !important;
@@ -1305,29 +1309,29 @@ input:checked+.optCheck {
 }
 
 #ammoDisplay {
-    position: fixed;
-    background-color: transparent;
-    background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
-    transform: none;
-    width: 50px;
+	position: fixed;
+	background-color: transparent;
+	background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+	transform: none;
+	width: 50px;
 	height: 4px;
 	top: calc(50% + 35px);
 	left: calc(50% - 25px);
-    padding: 0;
-    padding-top: 0;
-    padding-left: 0;
-    border-radius: 0;
+	padding: 0;
+	padding-top: 0;
+	padding-left: 0;
+	border-radius: 0;
 }
 
 #ammoVal {
-    position: fixed;
+	position: fixed;
 	font-size: var(--hp-size);
-    right: calc(50% - 250px);
-    bottom: 1%;
-    color: var(--ammo-color);
-    font-family: hpammo;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	right: calc(50% - 250px);
+	bottom: 1%;
+	color: var(--ammo-color);
+	font-family: hpammo;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
 #ammoMax {
@@ -1408,58 +1412,58 @@ input:checked+.optCheck {
 	color: #fff;
 }
 
-#termsInfo{
+#termsInfo {
 	background-color: transparent;
 }
 
-#termsInfo *:not(.terms~[onclick="showWindow(35)"]){
+#termsInfo *:not(.terms~[onclick="showWindow(35)"]) {
 	display: none
 }
 
-#menuWindow *{
+#menuWindow * {
 	border: hidden
 }
+
 
 /* Chat */
 
 #uiBase.onMenu #chatHolder {
-    position: fixed;
-    bottom: 30px!important;
-    left: 250px; 
+	position: fixed;
+	bottom: 30px!important;
+	left: 250px;
 }
 
 #chatHolder {
-    bottom: 145px !important;
-    transition: .5s;
-    left: 20px;
-    border-radius: 4px;
-    background-color: transparent!important
+	bottom: 145px !important;
+	transition: .5s;
+	left: 20px;
+	border-radius: 4px;
+	background-color: transparent!important
 }
 
-
-#chatList{
-    overflow: hidden;
-    border-radius: 0;
-    background: transparent
+#chatList {
+	overflow: hidden;
+	border-radius: 0;
+	background: transparent
 }
 
-#chatInputHolder{
-    background: transparent;
-    border: hidden!important;
-    padding: 0!Important;
-    width: 90%;
-    margin-left: -5px;
-    margin-bottom: 5px;
-    height: 0;
-    transition-duration: 420ms
+#chatInputHolder {
+	background: transparent;
+	border: hidden!important;
+	padding: 0!Important;
+	width: 90%;
+	margin-left: -5px;
+	margin-bottom: 5px;
+	height: 0;
+	transition-duration: 420ms
 }
 
-#chatInputHolder:focus-within{
-    height: 30px
+#chatInputHolder:focus-within {
+	height: 30px
 }
 
-#chatSwitchHolder{
-    display: none!Important
+#chatSwitchHolder {
+	display: none!Important
 }
 
 #chatInput {
@@ -1467,40 +1471,85 @@ input:checked+.optCheck {
 	border: hidden;
 	transition-duration: 0ms;
 	border-bottom: 2px solid #fff;
-    opacity: 0;
-    width: 107%!important;
-    font-size: 18px;
+	opacity: 0;
+	width: 107%!important;
+	font-size: 18px;
 }
 
 .chatItem[style] {
-    color: #fff !important;
-    font-size: 18px;
-    width: -webkit-fill-available;
-    margin: 0px;
-    background: rgba(0,0,0,0.4)!important;
-    padding: 5px 5px 5px 10px;
-    border-radius: 0;
+	color: #fff !important;
+	font-size: 18px;
+	width: -webkit-fill-available;
+	margin: 0px;
+	background: rgba(0, 0, 0, 0.4)!important;
+	padding: 5px 5px 5px 10px;
+	border-radius: 0;
 }
 
-
-#chatInput:focus{
-    transition-duration: 320ms;
-    border-radius: 1px;
-    opacity: 1;
-    height: 30px
+#chatInput:focus {
+	transition-duration: 320ms;
+	border-radius: 1px;
+	opacity: 1;
+	height: 30px
 }
 
 #chatInput::placeholder {
-    color: #ffffff00;
+	color: #ffffff00;
 }
 
 .chatItem {
-    border-radius: 0;
-    margin-right: 0px;
-    text-align: left;
-    background: transparent!Important
+	border-radius: 0;
+	margin-right: 0px;
+	text-align: left;
+	background: transparent!Important
 }
 
-#policeButton{
+#policeButton {
 	box-shadow: 0 0 black!important
+}
+
+
+/* 6th August */
+
+.menBtnIcn {
+	font-size: 0!important;
+}
+
+#menuItemContainer {
+	background: transparent;
+	height: 30px;
+	padding: 0!important
+}
+
+.menuItem {
+	height: 30px;
+	padding: 0px!important;
+	margin: 0 15px
+}
+
+.menuItem .menuItemTitle {
+	margin-top: -50px
+}
+
+.menuItem:first-of-type {
+	width: max-content!important;
+}
+
+.progressBarInner,
+.xpBarB,
+.chalXPBarC {
+	height: 100%;
+	background-image: linear-gradient(to right, var(--accent-color), var(--accent-color), 94%, white);
+}
+
+.material-icons-outlined {
+	color: var(--accent-color)!important
+}
+
+.quickJoin {
+	border: hidden
+}
+
+#loadEditrBtn {
+	display: none!important;
 }
