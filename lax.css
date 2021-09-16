@@ -32,6 +32,13 @@ a:active {
 	color: var(--accent-color);
 }
 
+#gameMessage{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 90px;
+}
+
 a:visited {
 	color: var(--accent-color);
 }
